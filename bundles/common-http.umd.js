@@ -115,6 +115,7 @@ var HttpHeaders = (function () {
                 });
             };
         }
+        this.init();
     }
     /**
      * Checks for existence of header by given name.
@@ -1230,7 +1231,7 @@ var HttpResponse = (function (_super) {
 var HttpErrorResponse = (function (_super) {
     tslib.__extends(HttpErrorResponse, _super);
     function HttpErrorResponse(init) {
-        var _this = 
+        var _this =
         // Initialize with a default status of 0 / Unknown Error.
         _super.call(this, init, 0, 'Unknown Error') || this;
         _this.name = 'HttpErrorResponse';

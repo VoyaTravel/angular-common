@@ -108,6 +108,7 @@ class HttpHeaders {
                 });
             };
         }
+        this.init();
     }
     /**
      * Checks for existence of header by given name.
